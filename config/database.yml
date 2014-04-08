@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: hacker_news_clone_development
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: hacker_news_clone_test
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: hacker_news_clone_production
+
