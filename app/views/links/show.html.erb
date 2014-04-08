@@ -1,0 +1,14 @@
+<h3><%= link_to "#{@link.address}", "#{@link.address}" %></h3>
+
+<div class="nav navbar">
+  <ul class="nav pull-right">
+    <li><%= link_to "Edit Link", edit_link_path, :class => "btn btn-warning" %></li>
+    <br>
+    <li><%= link_to "Delete", link_path(@link),
+                      :confirm => "Permanently Delete this Link?",
+                      :method => "delete",
+                      :class => "btn btn-danger" %></li>
+    <br>
+    <li><%= link_to "Home", root_path, :class => "btn btn-success" %></li>
+  </ul>
+</div>

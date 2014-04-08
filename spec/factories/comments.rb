@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :comment do
-    statement "MyText"
+    statement "This coding school is so great!"
     link_id 1
   end
 end

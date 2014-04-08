@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :link do
-    address "MyString"
+    address "http://learnhowtoprogram.com"
     points 1
   end
 end
