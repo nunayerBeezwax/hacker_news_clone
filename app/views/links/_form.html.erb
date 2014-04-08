@@ -1,9 +1,8 @@
 <%= render('layouts/errors', object: @link) %>
 <%= form_for @link do |f| %>
-  <div class='form-group'>
-    <%= f.label "Link Address" %>
-    <%= f.hidden_field(:points, :value => 0) %>
-    <%= f.text_field :address %>
+  <div class='form-group form-inline'>
+    <%= f.label :address, "Link Address" %>
+    <%= f.text_field :address, :class => 'form-control' %>
   </div>
     <%= f.submit(:class => "btn btn-primary") %>
 

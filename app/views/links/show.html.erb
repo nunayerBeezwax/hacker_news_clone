@@ -2,13 +2,13 @@
 
 <div class="nav navbar">
   <ul class="nav pull-right">
-    <li><%= link_to "Edit Link", edit_link_path, :class => "btn btn-warning" %></li>
-    <br>
+    <li><%= link_to "Edit Link", edit_link_path, :class => "btn btn-warning space-me" %></li>
     <li><%= link_to "Delete", link_path(@link),
                       :confirm => "Permanently Delete this Link?",
                       :method => "delete",
-                      :class => "btn btn-danger" %></li>
-    <br>
-    <li><%= link_to "Home", root_path, :class => "btn btn-success" %></li>
+                      :class => "btn btn-danger space-me" %></li>
+
+    <li><%= link_to "Add comment", new_comment_path, :class => "btn btn-primary space-me" %></li>
+    <li><%= link_to "Home", root_path, :class => "btn btn-success space-me" %></li>
   </ul>
 </div>
