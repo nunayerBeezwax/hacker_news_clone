@@ -2,7 +2,7 @@
 
 <ul>
   <% @link.comments.each do |comment| %>
-    <li class="comment"><%= simple_format comment.statement %></li>
+    <%= comment.statement %>
   <% end %>
 </ul>
 
@@ -14,7 +14,7 @@
                       :method => "delete",
                       :class => "btn btn-danger space-me" %></li>
 
-    <li><%= link_to "Add comment", new_comment_path(@link), :class => "btn btn-primary space-me" %></li>
+    <li><%= link_to "Add comment", new_comment_path, :class => "btn btn-primary space-me" %></li>
     <li><%= link_to "Home", root_path, :class => "btn btn-success space-me" %></li>
   </ul>
 </div>

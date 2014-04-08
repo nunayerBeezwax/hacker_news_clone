@@ -5,9 +5,8 @@ ul li {
   list-style-type: none;
 }
 
-
-/*
-.liney {
-  line-height: 10%;
+.comment {
+  border: 1px solid lightblue;
+  padding: 5px;
+  border-radius: 4px;
 }
-*/

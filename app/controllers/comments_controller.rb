@@ -2,12 +2,13 @@ class CommentsController < ApplicationController
 
   def new
     @comment = Comment.new
+    @link = Link.find(params[:format])
   end
 
   def create
     @comment = Comment.create(comment_params)
-    flash[:notice] = "#{@comment.address} has been added"
-    redirect_to "/"
+    flash[:notice] = "Your comment has been added"
+    redirect_to(link_path(@comment.link_id))
   end
 
   def edit

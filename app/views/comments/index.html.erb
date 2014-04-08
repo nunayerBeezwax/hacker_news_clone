@@ -1,0 +1,13 @@
+<h1>Links</h1>
+
+<ul class="list-group">
+  <% @links.each do |link| %>
+    <li><%= link_to "", new_point_path(link), :class => "glyphicon glyphicon-thumbs-up btn-primary btn btn-xs" %><%= " #{link.points.count} " %> <%= link_to "#{link.address}", link_path(link) %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "New Link", new_link_path, :class => "btn btn-success" %>
+
+

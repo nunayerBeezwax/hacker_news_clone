@@ -7,9 +7,4 @@ class PointsController < ApplicationController
     @point.save
     redirect_to "/"
   end
-
-  def create
-    @point = Point.create(point_params)
-    redirect_to "/"
-  end
 end
